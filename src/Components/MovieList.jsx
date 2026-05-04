@@ -1,13 +1,13 @@
 import MovieCard from "./MovieCard";
 
-function MovieList({ movies, deleteMovie }) {
+function MovieList({ movies, addToDownloads }) {
   return (
-    <div>
+    <div className="movie-grid">
       {movies.map((movie) => (
-        <MovieCard 
-          key={movie.id} 
-          movie={movie} 
-          deleteMovie={deleteMovie} 
+        <MovieCard
+          key={movie.id}
+          movie={movie}
+          addToDownloads={addToDownloads}
         />
       ))}
     </div>

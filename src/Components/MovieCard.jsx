@@ -1,11 +1,12 @@
-function MovieCard({ movie, deleteMovie }) {
+function MovieCard({ movie, addToDownloads }) {
   return (
-    <div>
+    <div className="card">
       <h3>{movie.title}</h3>
       <p>{movie.year}</p>
+      <small>{movie.desc}</small>
 
-      <button onClick={() => deleteMovie(movie.id)}>
-        Delete ❌
+      <button onClick={() => addToDownloads(movie)}>
+        📥 Download
       </button>
     </div>
   );

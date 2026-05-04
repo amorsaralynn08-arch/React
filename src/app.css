@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0f0f0f;
+  color: white;
+  text-align: center;
+}
+
+/* HEADER */
+h1 {
+  color: red;
+  margin-top: 20px;
+  font-size: 2.5rem;
+}
+
+/* NAV BAR (All / Downloads / Genre) */
+.nav {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* BUTTONS + DROPDOWN */
+button,
+select {
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* BUTTON STYLE */
+button {
+  background: red;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #ff1e1e;
+  transform: scale(1.05);
+}
+
+/* DROPDOWN STYLE */
+select {
+  background: #222;
+  color: white;
+}
+
+/* GRID LAYOUT */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* MOVIE CARD */
+.card {
+  background: #1c1c1c;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+  padding-bottom: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.card p {
+  margin: 0;
+  color: #ccc;
+}
+
+.card small {
+  display: block;
+  padding: 5px;
+  color: #aaa;
+  font-size: 12px;
+}
+
+/* BUTTON INSIDE CARD */
+.card button {
+  margin-top: 10px;
+  width: 90%;
+}
