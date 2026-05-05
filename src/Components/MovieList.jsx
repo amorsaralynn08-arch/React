@@ -1,6 +1,6 @@
 import MovieCard from "./MovieCard";
 
-function MovieList({ movies, addToDownloads }) {
+function MovieList({ movies, addToDownloads, downloads }) {
   return (
     <div className="movie-grid">
       {movies.map((movie) => (
@@ -8,6 +8,7 @@ function MovieList({ movies, addToDownloads }) {
           key={movie.id}
           movie={movie}
           addToDownloads={addToDownloads}
+          dowloads={downloads}
         />
       ))}
     </div>
